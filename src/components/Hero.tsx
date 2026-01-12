@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import resumePdf from "/Rakesh_Reddy_Resume.pdf?url";
 import profileImage from "@/assets/rakesh-profile.jpg";
 
 const Hero = () => {
@@ -52,6 +53,16 @@ const Hero = () => {
               >
                 View Projects
                 <ArrowRight className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                href="/Rakesh_Reddy_Resume.pdf"
+                download="Rakesh_Reddy_Resume.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-secondary to-accent text-secondary-foreground font-heading font-semibold transition-all hover:shadow-lg hover:shadow-secondary/30"
+              >
+                Download CV
+                <Download className="w-4 h-4" />
               </motion.a>
               <motion.a
                 href="#contact"
